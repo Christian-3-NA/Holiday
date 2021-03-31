@@ -1,0 +1,44 @@
+/*  Christian Anderson
+    03/30/2021
+*/
+
+
+html { 
+    background-color: #6e2b2b;
+
+    height: 100%; 
+    overflow: hidden;
+}
+
+body {
+    background-image: url('snow.gif');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+
+    height: 90%; 
+    margin: 2.5%;
+    width: 95%;
+}
+
+div {
+    position: fixed;
+    top: 25%;
+    left: 18%;
+}
+
+h1 {
+    color: #c4c4c4;
+    font-size: 1600%;
+    text-shadow: 0px 0px 20px #7fc77f;
+
+    margin: auto;
+}
+
+h2 {
+    color: #c4c4c4;
+    font-size: 800%;
+
+    margin: auto;
+}

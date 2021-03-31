@@ -1,0 +1,34 @@
+<!-- index.html
+	Christian Anderson
+	03/30/2021
+	
+	A countdown of days until christmas-->
+	
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="site.css">
+	</head>
+
+	<body>
+		<div>
+			<h1 id="date">###</h1>
+			<h2>Days Until Christmas</h2>
+		</div>
+
+		
+		<script>
+			var today = new Date();
+			var christmas = new Date(today.getFullYear(), 11, 25);
+
+			if (today.getMonth() == 12 && today.getDate() > 25) {
+				christmas.setFullYear(christmas.getFullYear()+1); 
+			}  
+			
+			var one_day = (1000*60*60*24);
+
+			document.getElementById("date").innerHTML = (Math.ceil((christmas.getTime() - today.getTime()) / (one_day)));
+		</script>
+	</body>
+</html>
